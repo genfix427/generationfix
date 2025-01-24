@@ -37,7 +37,7 @@ const ContactHighlight = () => {
         <div className="container">
           <div className="lg:w-[470px] mx-auto mt-[55px]">
             <h2 className='text-3xl font-bold text-center'>Contact <span className='text-green300'>Us</span></h2>
-            <p className="text_para text-center">
+            <p className="text_para text-center mx-5">
             Contact us now and start your journey toward success!
             </p>
           </div>
