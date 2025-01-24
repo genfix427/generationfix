@@ -15,7 +15,7 @@ const RepairBanner = () => {
 
           <div className="w-full flex flex-col gap-4">
             <div className="">
-              <p className="text-[14px] md:text-[16px] text-green300 text-bold">Your Devices, Restored by Experts</p>
+              <p className="text-[14px] md:text-[16px] text-green300 font-bold">Your Devices, Restored by Experts</p>
               <h2 className='text-xl sm:text-2xl md:text-3xl text-headingColor font-bold'>Expert Repairs for Every Device: Bringing Your Technology Back to Life</h2>
 
             </div>

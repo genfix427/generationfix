@@ -8,7 +8,7 @@ const OSHero = () => {
           <div className="flex flex-col gap-5 text-center">
             <div className="">
               <p className="text-[16px] font-bold text-white">Maximize Your Online Presence, Maximize Your Success</p>
-              <h2 className="text-3xl text-white font-bold">Effective <span className="text-green300">Digital Marketing Solutions</span> for Every Business</h2>
+              <h2 className="text-3xl text-white font-bold">Effective <span className="text-textColor">Digital Marketing Solutions</span> for Every Business</h2>
             </div>
             <p className="text-[17px] text-white">
               Whether you're a startup or an established enterprise, our digital marketing services are designed to match your goals. We create tailored marketing strategies that increase your visibility, connect you with the right audience, and drive conversions across all digital platforms.

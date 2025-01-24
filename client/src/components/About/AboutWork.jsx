@@ -32,8 +32,8 @@ const AboutWork = () => {
     <section className="mt-[100px] aboutcontbg py-20">
           <div className="container">
             <div className="mb-10 text-center">
-            <p className="subheading">Working Process</p>
-            <h2 className="heading text-white">How <span className="text-green300">It</span> Works </h2>
+            <p className="subheading !text-textColor">Working Process</p>
+            <h2 className="heading text-white">How <span className="text-textColor">It</span> Works </h2>
               </div>
             <div className="flex flex-col md:flex-row items-center justify-between text-center mx-5 gap-8">
     

@@ -8,7 +8,7 @@ const RSHero = () => {
           <div className="flex flex-col gap-5 text-center">
           <div className="">
               <p className="text-[16px] font-bold text-white">Revive Your Devices with Precision Repairs.</p>
-              <h2 className="text-3xl text-white font-bold">Comprehensive <span className="text-green300">Repair Services</span> Under One Roof</h2>
+              <h2 className="text-3xl text-white font-bold">Comprehensive <span className="text-textColor">Repair Services</span> Under One Roof</h2>
             </div>
             <p className="text-[17px] text-white">
             Whether it’s a shattered screen, a faulty keyboard, or a slow PC, we have the expertise to repair all kinds of issues with efficiency and care.

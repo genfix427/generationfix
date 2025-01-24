@@ -75,7 +75,7 @@ const BlogCard = () => {
           ))}
         </div>
         {/* Arrows positioned below */}
-        <div className="flex justify-start mt-4 gap-5">
+        <div className="flex justify-start mt-4 gap-5 mx-3">
           <button
             onClick={scrollLeft}
             className="p-2 bg-green300 text-white rounded-full shadow-lg hover:bg-white hover:text-green300 hover:border hover:border-solid hover:border-green300"
