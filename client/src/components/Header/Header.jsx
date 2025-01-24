@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import Logo from '../../assets/images/logo.png'
-import Call from '../../assets/gifIcons/phone.gif'
-import Chat from '../../assets/gifIcons/chat.gif'
+import Call  from '../../assets/gifIcons/phone.gif'
+import Chat  from '../../assets/gifIcons/chat.gif'
 
 const Header = ({ onlineServices, repairServices, itServices }) => {
   const [isCompanyDrawerOpen, setIsCompanyDrawerOpen] = useState(false);
@@ -41,17 +41,14 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
       <nav className="border-gray-200 border-b-[1px] bg-textColor">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl py-2 px-4 ">
           <div className="flex items-center gap-3">
-            <Link to='/' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
+            <Link to='https://www.instagram.com/genfix247/#' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
               <FaSquareInstagram />
             </Link>
-            <Link to='/' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
+            <Link to='https://www.facebook.com/genfix247' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
               <FaFacebookSquare />
             </Link>
-            <Link to='/' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
+            <Link to='https://www.linkedin.com/company/generations-fix/?viewAsMember=true' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
               <FaLinkedin />
-            </Link>
-            <Link to='/' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
-              <FaGithubSquare />
             </Link>
           </div>
           <div className="flex items-center">
@@ -83,8 +80,8 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
             <Navbar.Toggle />
           </div>
           <Navbar.Collapse>
-            <Link to="/"><Navbar.Link>Home</Navbar.Link></Link>
-            <Link to="/about"><Navbar.Link>About Us</Navbar.Link></Link>
+          <Link to="/"><Navbar.Link>Home</Navbar.Link></Link>
+          <Link to="/about"><Navbar.Link>About Us</Navbar.Link></Link>
             <Navbar.Link>
               <div
                 className="relative cursor-pointer"

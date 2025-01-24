@@ -1,7 +1,7 @@
 "use client";
 
 import { Footer } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/images/logo.png'
 
@@ -45,11 +45,9 @@ const Footerr = () => {
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright by="GenerationsFix. All right reserved" year={2022} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Link to='' ><Footer.Icon icon={BsFacebook} /></Link>
-            <Link to='' ><Footer.Icon icon={BsInstagram} /></Link>
-            <Link to='' ><Footer.Icon icon={BsTwitter} /></Link>
-            <Link to='' ><Footer.Icon icon={BsGithub} /></Link>
-            <Link to='' ><Footer.Icon icon={BsDribbble} /></Link>
+            <Link to='https://www.facebook.com/genfix247' ><Footer.Icon icon={BsFacebook} /></Link>
+            <Link to='https://www.instagram.com/genfix247/#' ><Footer.Icon icon={BsInstagram} /></Link>
+            <Link to='https://www.linkedin.com/company/generations-fix/?viewAsMember=true' ><Footer.Icon icon={BsLinkedin} /></Link>
           </div>
         </div>
       </div>

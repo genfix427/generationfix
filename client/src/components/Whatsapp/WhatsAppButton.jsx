@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   const phoneNumber = "12345678900"; // Replace with your WhatsApp number
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-10 right-6">
       <a
         href={`https://wa.me/${17865056525}`}
         target="_blank"

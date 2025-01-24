@@ -7,9 +7,9 @@ import icon04 from "../../assets/gifIcons/mail.gif"
 const contact = [
   {
     icon: icon01,
-    title: "Emergency Call",
+    title: "24/7 support",
     text1: "+1 (786) 505-6525",
-    text2: "Monday - Friday: 9am - 5pm",
+    text2: "Facing some issue? we are here",
   },
   {
     icon: icon02,
@@ -27,7 +27,7 @@ const contact = [
     icon: icon04,
     title: "Email Us",
     text1: "ruhan.syed@generationsfix.com",
-    text2: "emergencies@denticare.com",
+    text2: "genfix427@gmail.com",
   },
 ]
 
@@ -36,9 +36,9 @@ const ContactHighlight = () => {
     <section>
         <div className="container">
           <div className="lg:w-[470px] mx-auto mt-[55px]">
-            <h2 className='text-3xl font-bold text-center'>Contact <span className='text-green300'>Flowbite</span></h2>
+            <h2 className='text-3xl font-bold text-center'>Contact <span className='text-green300'>Us</span></h2>
             <p className="text_para text-center">
-            Globally incubate standards compliant channels before scalable benefits.
+            Contact us now and start your journey toward success!
             </p>
           </div>
 
@@ -49,7 +49,7 @@ const ContactHighlight = () => {
                 contact.map((item, index) => (
                   <div className="py-[30px] px-5 shadow-xl rounded-md " key={index}>
                 <div className="flex items-center justify-center">
-                  <img src={item.icon} className='h-[150px]' alt="" />
+                  <img src={item.icon} className='h-[100px] rounded-full' alt="" />
                 </div>
                 <div className="mt-[30px] ">
                   <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center ">{item.title}</h2>
