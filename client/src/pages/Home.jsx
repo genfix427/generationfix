@@ -7,7 +7,6 @@ import BlogCard from '../components/Cards/BlogCard'
 import HomeContent from '../components/HomeComponents/HomeContent'
 import WorkingProcess from '../components/HomeComponents/WorkingProcess'
 import FAQ from '../components/HomeComponents/FAQ'
-import MyCard from '../components/MyCard/MyCard'
 import RepairBanner from '../components/HomeComponents/RepairBanner'
 
 const Home = () => {
@@ -19,11 +18,9 @@ const Home = () => {
       <HomeAboutCard />
       <HomeServices />
       <BlogCard />
-      <HomeContent />
-      <MyCard />
       <WorkingProcess />
-      
       <FAQ />
+      <HomeContent />
     </div>
   )
 }

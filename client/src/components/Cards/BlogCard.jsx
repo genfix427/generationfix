@@ -37,7 +37,7 @@ const BlogCard = () => {
     <section className="my-[55px] mx-3 md:mx-0 relative">
       <div className="container">
 
-        <div className="flex flex-wrap justify-between mb-8">
+        <div className="flex flex-wrap justify-between mb-8 mx-3">
           <div className="">
             <p className="text-[14px] text-green300 font-bold">Our Repair Services</p>
             <h2 className="text-3xl text-headingColor font-bold">Make Your Devices <span className="text-green300">Run</span> Like <span className="text-green300">New Again!</span></h2>
@@ -56,7 +56,7 @@ const BlogCard = () => {
           {repairServices.map((item, index) => (
 
             <Card
-              className="min-w-[100%] h-[500px] md:min-w-[300px] max-w-[350px] flex-shrink-0 shadow-md snap-center hover:bg-textColor"
+              className="min-w-[100%] h-[500px] md:min-w-[300px] max-w-[350px] flex-shrink-0 shadow-md snap-center hover:bg-textColor mx-3"
               key={index}
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc={item.contImg}
