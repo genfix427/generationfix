@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import SocialLinks from '../SocialLinks/SocialLinks'added s
+import SocialLinks from '../SocialLinks/SocialLinks'
 
 
 const ContactHero = () => {
