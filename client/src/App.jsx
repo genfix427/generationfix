@@ -16,10 +16,12 @@ import RepairServices from './pages/RepairServices'
 import ItServices from './pages/ItServices'
 import RepairServiceDetail from './pages/RepairServiceDetail'
 import ItServiceDetail from './pages/ItServiceDetail'
+import ScrollToTop from './components/Hero/ScrollToTop'
 
 const App = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Header onlineServices={onlineServices} repairServices={repairServices} itServices={itServices}/>
       <Routes>
         <Route path="/" element={<Home />} />
