@@ -42,7 +42,7 @@ const HomeAboutCard = () => {
 
               <div className="">
                 <Link to="/about">
-                  <GoArrowUpRight className='bg-green300 text-[40px] p-2 rounded-full' />
+                  <GoArrowUpRight className='bg-green300 text-white text-[40px] p-2 rounded-full' />
                 </Link>
               </div>
               </div>

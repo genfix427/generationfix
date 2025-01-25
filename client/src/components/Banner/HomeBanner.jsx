@@ -64,13 +64,13 @@ const HomeBanner = () => {
                   to='/appointment'
                   className="block bg-transparent border-2 border-solid text-black border-green300 hover:bg-green300 hover:text-white transition-all font-bold p-1 rounded-xl py-2 px-5"
                 >
-                  Book Appointment
+                  Free Consultation
                 </Link>
                 <Link
                   to='/contact'
                   className="block bg-transparent border-2 border-solid text-black border-green300 hover:bg-green300 hover:text-white transition-all font-bold p-1 rounded-xl py-2 px-5"
                 >
-                  Send Enquiry
+                  Send Inquiry
                 </Link>
               </div>
             </div>

@@ -53,14 +53,14 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
           </div>
           <div className="flex items-center">
             <p className="text-sm text-green300 font-semibold dark:text-white hover:underline hidden md:block">
-              (+1 (786) 505-6525)
+              +1 (786) 505-6525
             </p>
 
             <Link to="tel:+17865056525">
               <button className="flex gap-2 items-center ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 py-1 px-2 rounded-md mt-1 md:px-3 md:py-2 transition-all"> <img src={Call} className="w-5 rounded-full" alt="" />Call </button>
             </Link>
             <Link to="/contact">
-              <button className="flex gap-2 items-center ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 py-1 px-2 rounded-md mt-1 md:px-3 md:py-2 transition-all"> <img src={Chat} className="w-5 rounded-full" alt="" />Enquiry </button>
+              <button className="flex gap-2 items-center ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 py-1 px-2 rounded-md mt-1 md:px-3 md:py-2 transition-all"> <img src={Chat} className="w-5 rounded-full" alt="" />Inquiry </button>
             </Link>
 
           </div>

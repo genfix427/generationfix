@@ -27,7 +27,7 @@ const ContactHero = () => {
                   to='/appointment'
                   className=" bg-transparent border-2 border-solid border-green300 hover:bg-green300 hover:text-white transition-all font-bold p-1 rounded-xl py-2 px-5"
                 >
-                  Book Appointment
+                  Free Consultation
                 </Link>
                 <Link
                   to="tel:+17865056525"
