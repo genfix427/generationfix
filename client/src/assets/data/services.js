@@ -77,6 +77,7 @@ export const onlineServices = [
         hwDesc: "Go live and provide ongoing maintenance."
       },
     ],
+    slug: "Website-design-and-development",
     aboutImg : WebAbout,
     contImg: WebCont,
     onlineServices: true,
@@ -123,6 +124,7 @@ export const onlineServices = [
         hwDesc: "Recommend strategies based on analytics findings."
       },
     ],
+    slug: "Google-Analytics",
     aboutImg : GaAbout,
     contImg: GaCont,
     onlineServices: true,
@@ -168,6 +170,7 @@ export const onlineServices = [
         hwDesc: "Drive targeted traffic and measure performance."
       },
     ],
+    slug: "Social-Media-Marketing",
     aboutImg : SmmAbout,
     contImg: SmmCont,
     onlineServices: true,
@@ -213,6 +216,7 @@ export const onlineServices = [
         hwDesc: "Track performance and refine tactics."
       },
     ],
+    slug: "SEO-or-AI&AGI-SEO",
     aboutImg : SeoAbout,
     contImg: SeoCont,
     onlineServices: true,
@@ -262,6 +266,7 @@ export const onlineServices = [
         hwDesc: "Publish-ready content delivered on time."
       },
     ],
+    slug: "Content-Writing",
     aboutImg : CwAbout,
     contImg: CwCont,
     onlineServices: true,
@@ -307,6 +312,7 @@ export const onlineServices = [
         hwDesc: "Share performance metrics and insights regularly."
       },
     ],
+    slug: "Platform-Management-Service",
     aboutImg : PmsAbout,
     contImg: PmsCont,
     onlineServices: true,
@@ -356,6 +362,7 @@ export const onlineServices = [
         hwDesc: "Provide insights and recommendations for growth."
       },
     ],
+    slug: "Paid-Advertising-Service",
     aboutImg : PasAbout,
     contImg: PasCont,
     onlineServices: true,
@@ -401,6 +408,7 @@ export const onlineServices = [
         hwDesc: "Measure campaign performance and provide insights."
       },
     ],
+    slug: "Influencer-Marketing-Service",
     aboutImg : ImsAbout,
     contImg: ImsCont,
     onlineServices: true,
@@ -446,6 +454,7 @@ export const onlineServices = [
         hwDesc: "Collect and act on audience insights."
       },
     ],
+    slug: "Community-Engagement-Service",
     aboutImg : CesAbout,
     contImg: CesCont,
     onlineServices: true,
@@ -491,6 +500,7 @@ export const onlineServices = [
         hwDesc: "Use findings to improve future campaigns."
       },
     ],
+    slug: "Analytics-and-Reports",
     aboutImg : GirAbout,
     contImg: GirCont,
     onlineServices: true,
@@ -536,6 +546,7 @@ export const onlineServices = [
         hwDesc: "Adjust based on performance metrics."
       },
     ],
+    slug: "Brand-Awareness",
     aboutImg : BaAbout,
     contImg: BaCont,
     onlineServices: true,

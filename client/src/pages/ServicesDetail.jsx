@@ -7,8 +7,8 @@ import ServiceContent from '../components/ServiceDetail/ServiceContent';
 import ServiceWork from '../components/ServiceDetail/ServiceWork';
 
 const ServicesDetail = ({ onlineServices }) => {
-  const { id } = useParams();
-  const onservices = onlineServices.find(p => p.id === parseInt(id));
+  const { slug } = useParams();
+  const onservices = onlineServices.find(p => p.slug === slug);
 
   if (!onservices) {
     return <h2>Service Not Found</h2>;

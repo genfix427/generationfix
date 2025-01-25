@@ -61,7 +61,7 @@ const BlogCard = () => {
               imgAlt="Meaningful alt text for an image that is not purely decorative"
               imgSrc={item.contImg}
             >
-              <Link to={`/repair-services/${item.id}`}>
+              <Link to={`/repair-services/${item.slug}`}>
                 <p className="text-green300 text-md md:text-lg">{item.name}</p>
                 <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   {item.heading}

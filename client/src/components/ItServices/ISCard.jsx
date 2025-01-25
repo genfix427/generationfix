@@ -30,7 +30,7 @@ const ISCard = ({ itServices }) => {
                 </p>
 
                 <div className="flex items-center justify-between mt-[30px]">
-                  <Link to={`/it-services/${service.id}`} className='py-2 px-4 rounded-md border border-solid border-green300 mt-[30px] flex items-center justify-center group hover:bg-textColor hover:border-black shadow-md transition-all'>
+                  <Link to={`/it-services/${service.slug}`} className='py-2 px-4 rounded-md border border-solid border-green300 mt-[30px] flex items-center justify-center group hover:bg-textColor hover:border-black shadow-md transition-all'>
                     Read More <BsArrowRight className='group-hover:text-green300 w-6 h-5 pl-2' />
                   </Link>
 

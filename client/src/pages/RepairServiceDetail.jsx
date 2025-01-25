@@ -7,8 +7,8 @@ import RepairContent from '../components/ServiceDetail/RepairServiceDetail/Repai
 import RepairWork from '../components/ServiceDetail/RepairServiceDetail/RepairWork';
 
 const RepairServiceDetail = ({repairServices}) => {
-  const { id } = useParams();
-  const repServices = repairServices.find(p => p.id === parseInt(id));
+  const { slug } = useParams();
+  const repServices = repairServices.find(p => p.slug === slug);
 
   if (!repServices) {
     return <h2>Service is Not Found</h2>;

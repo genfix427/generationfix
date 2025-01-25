@@ -34,9 +34,9 @@ const App = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/appointment" element={<Appointment />} />
 
-        <Route path="/services/:id" element={<ServicesDetail onlineServices={onlineServices} />} />
-        <Route path="/repair-services/:id" element={<RepairServiceDetail repairServices={repairServices} />} />
-        <Route path="/it-services/:id" element={<ItServiceDetail itServices={itServices} />} />
+        <Route path="/services/:slug" element={<ServicesDetail onlineServices={onlineServices} />} />
+        <Route path="/repair-services/:slug" element={<RepairServiceDetail repairServices={repairServices} />} />
+        <Route path="/it-services/:slug" element={<ItServiceDetail itServices={itServices} />} />
 
 
         

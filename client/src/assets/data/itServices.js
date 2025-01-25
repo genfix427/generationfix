@@ -61,6 +61,7 @@ export const itServices = [
         hwDesc: "Provide guidance on network management."
       },
     ],
+    slug: "Network-Setup-and-Configuration",
     aboutImg : NSSImgAbt,
     contImg: NSSImgCont,
     itServices: true,
@@ -106,6 +107,7 @@ export const itServices = [
         hwDesc: "Offer real-time troubleshooting and upgrades."
       },
     ],
+    slug: "Server-Installation-and-Maintenance",
     aboutImg : SISImgAbt,
     contImg: SISImgCont,
     itServices: true,
@@ -151,6 +153,7 @@ export const itServices = [
         hwDesc: "Perform routine security checks and updates."
       },
     ],
+    slug: "Network-Security-and-Firewall-Setup",
     aboutImg : NFSImgAbt,
     contImg: NFSImgCont,
     itServices: true,
@@ -196,6 +199,7 @@ export const itServices = [
         hwDesc: "Provide regular maintenance and upgrades."
       },
     ],
+    slug: "Structured-Cabling-and-LAN-Setup",
     aboutImg : LANImgAbt,
     contImg: LANImgCont,
     itServices: true,
@@ -242,6 +246,7 @@ export const itServices = [
         hwDesc: "Provide ongoing monitoring and optimization."
       },
     ],
+    slug: "Cloud-Computing-and-Storage-Solutions",
     aboutImg : CCSImgAbt,
     contImg: CCSImgCont,
     itServices: true,
@@ -287,6 +292,7 @@ export const itServices = [
         hwDesc: "Provide ongoing support and updates."
       },
     ],
+    slug: "VPN-and-Remote-Access-Solutions",
     aboutImg : VPNImgAbt,
     contImg: VPNImgCont,
     itServices: true,
@@ -332,6 +338,7 @@ export const itServices = [
         hwDesc: "Provide support for using VoIP features."
       },
     ],
+    slug: "VoIP-Phone-System-Setup",
     aboutImg : VPSImgAbt,
     contImg: VPSImgCont,
     itServices: true,

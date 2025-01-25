@@ -58,6 +58,7 @@ export const repairServices = [
       hwDesc: "Return your phone in perfect working condition."
     },
   ],
+  slug: "Smartphone-Repairs",
   aboutImg : SMRImgAbt,
   contImg: SMRImgCont,
   repairServices: true,
@@ -103,6 +104,7 @@ export const repairServices = [
       hwDesc: "Ensure your device is running optimally."
     },
   ],
+  slug: "Laptop-and-Computer-Repairs",
   aboutImg : LCRImgAbt,
   contImg: LCRImgCont,
   repairServices: true,
@@ -148,6 +150,7 @@ export const repairServices = [
       hwDesc: "Provide recommendations for future maintenance."
     },
   ],
+  slug: "POS-System-Repairs",
   aboutImg : PSRImgAbt,
   contImg: PSRImgCont,
   repairServices: true,
@@ -193,6 +196,7 @@ export const repairServices = [
       hwDesc: "Ensure your tablet is functioning perfectly."
     },
   ],
+  slug: "Tablet-Repairs",
   aboutImg : TRImgAbt,
   contImg: TRImgCont,
   repairServices: true,
@@ -238,6 +242,7 @@ export const repairServices = [
       hwDesc: "Provide tips to avoid future issues."
     },
   ],
+  slug: "Printer-and-Scanner-Repairs",
   aboutImg : PRImgAbt,
   contImg: PRImgCont,
   repairServices: true,
@@ -283,6 +288,7 @@ export const repairServices = [
       hwDesc: "Ensure your console is fully functional."
     },
   ],
+  slug: "Gaming-Console-Repairs",
   aboutImg : GCRImgAbt,
   contImg: GCRImgCont,
   repairServices: true,

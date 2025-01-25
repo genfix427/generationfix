@@ -139,7 +139,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
           {
             onlineServices.map((onlserv, index) => (
 
-              <Link key={index} className="text-green300 hover:bg-textColor transition hover:text-black border-b p-2 rounded-xl" to={`/services/${onlserv.id}`} onClick={() => setIsCompanyDrawerOpen(false)}>
+              <Link key={index} className="text-green300 hover:bg-textColor transition hover:text-black border-b p-2 rounded-xl" to={`/services/${onlserv.slug}`} onClick={() => setIsCompanyDrawerOpen(false)}>
                 {onlserv.name}
               </Link>
             ))
@@ -158,7 +158,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
         <Drawer.Items className="flex flex-col gap-5 mt-5">
           {
             itServices.map((itsolserv, index) => (
-              <Link key={index} className="text-green300 hover:bg-textColor transition hover:text-black border-b p-2 rounded-xl" to={`/it-services/${itsolserv.id}`} onClick={() => setIsResourcesDrawerOpen(false)}>
+              <Link key={index} className="text-green300 hover:bg-textColor transition hover:text-black border-b p-2 rounded-xl" to={`/it-services/${itsolserv.slug}`} onClick={() => setIsResourcesDrawerOpen(false)}>
                 {itsolserv.name}
               </Link>
             ))
@@ -177,7 +177,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
         <Drawer.Items className="flex flex-col gap-5 mt-5">
           {
             repairServices.map((itserv, index) => (
-              <Link key={index} className="text-green300 hover:bg-textColor transition hover:text-black border-b p-2 rounded-xl" to={`/repair-services/${itserv.id}`} onClick={() => setIsRepairDrawerOpen(false)}>
+              <Link key={index} className="text-green300 hover:bg-textColor transition hover:text-black border-b p-2 rounded-xl" to={`/repair-services/${itserv.slug}`} onClick={() => setIsRepairDrawerOpen(false)}>
                 {itserv.name}
               </Link>
             ))

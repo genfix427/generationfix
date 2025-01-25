@@ -9,7 +9,7 @@ const ServiceTimeline = () => {
         <div className="container">
           <div className="card">
             {itServices.slice(0, 6).map((card, index) => (
-              <Link to={`/it-services/${card.id}`}>
+              <Link to={`/it-services/${card.slug}`}>
                 <div
                   key={index}
                   className="image"

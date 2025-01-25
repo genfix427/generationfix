@@ -7,8 +7,8 @@ import ItContent from '../components/ServiceDetail/ItSetviceDetail/ItContent';
 import ItWork from '../components/ServiceDetail/ItSetviceDetail/ItWork';
 
 const ItServiceDetail = ({itServices}) => {
-  const { id } = useParams();
-  const itsolServices = itServices.find(p => p.id === parseInt(id));
+  const { slug } = useParams();
+  const itsolServices = itServices.find(p => p.slug === slug);
 
   if (!itsolServices) {
     return <h2>Service is Not Found</h2>;

@@ -37,7 +37,7 @@ const RSCard = ({ repairServices }) => {
                 }
 
                 <div className="flex items-center justify-between mt-1">
-                  <Link to={`/repair-services/${service.id}`} className='py-2 px-4 rounded-md border border-solid border-green300 mt-[30px] flex items-center justify-center group hover:bg-textColor hover:border-black shadow-md transition-all'>
+                  <Link to={`/repair-services/${service.slug}`} className='py-2 px-4 rounded-md border border-solid border-green300 mt-[30px] flex items-center justify-center group hover:bg-textColor hover:border-black shadow-md transition-all'>
                     Read More <BsArrowRight className='group-hover:text-green300 w-6 h-5 pl-2' />
                   </Link>
 
