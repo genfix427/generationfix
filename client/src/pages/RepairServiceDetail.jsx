@@ -6,7 +6,7 @@ import RepairCard from '../components/ServiceDetail/RepairServiceDetail/RepairCa
 import RepairContent from '../components/ServiceDetail/RepairServiceDetail/RepairContent';
 import RepairWork from '../components/ServiceDetail/RepairServiceDetail/RepairWork';
 
-const RepairServiceDetail = ({repairServices}) => {
+const RepairServiceDetail = ({ repairServices }) => {
   const { slug } = useParams();
   const repServices = repairServices.find(p => p.slug === slug);
 

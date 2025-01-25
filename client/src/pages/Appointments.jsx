@@ -73,7 +73,7 @@ const Appointments = () => {
     setServiceType(""); // Reset service type
     setSelectedServices([]); // Reset selected services
     setSelectedDate(new Date()); // Reset date
-};
+  };
 
 
   return (

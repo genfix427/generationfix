@@ -6,7 +6,7 @@ import ItCard from '../components/ServiceDetail/ItSetviceDetail/ItCard';
 import ItContent from '../components/ServiceDetail/ItSetviceDetail/ItContent';
 import ItWork from '../components/ServiceDetail/ItSetviceDetail/ItWork';
 
-const ItServiceDetail = ({itServices}) => {
+const ItServiceDetail = ({ itServices }) => {
   const { slug } = useParams();
   const itsolServices = itServices.find(p => p.slug === slug);
 

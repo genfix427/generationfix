@@ -35,53 +35,53 @@ const FAQ = () => {
   return (
     <section className="">
       <div className="container">
-      <div className="mb-10 pt-20 mx-5 text-center">
+        <div className="mb-10 pt-20 mx-5 text-center">
           <p className="subheading">Digital Marketing FAQ</p>
           <h2 className="heading">Digital Marketing <span className="text-green300">Most</span> asked <span className="text-green300"> questions</span></h2>
         </div>
-      <div className="flex flex-col items-center justify-between md:flex-row gap-8 mx-5">
+        <div className="flex flex-col items-center justify-between md:flex-row gap-8 mx-5">
 
-        <div className="flex-1 rounded-2xl bg-textColor">
-          <img src={FAQimg} className='w-full hover:scale-[1.1] transition' alt="" />
+          <div className="flex-1 rounded-2xl bg-textColor">
+            <img src={FAQimg} className='w-full hover:scale-[1.1] transition' alt="" />
+          </div>
+
+          <div className="flex-1 space-y-4">
+            {faqData.map((item, index) => (
+              <AccordionItem
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                isOpen={openIndex === index} // Check if the current item is open
+                onToggle={() => handleToggle(index)} // Pass the toggle function
+              />
+            ))}
+          </div>
         </div>
-        
-        <div className="flex-1 space-y-4">
-          {faqData.map((item, index) => (
-            <AccordionItem
-              key={index}
-              question={item.question}
-              answer={item.answer}
-              isOpen={openIndex === index} // Check if the current item is open
-              onToggle={() => handleToggle(index)} // Pass the toggle function
-            />
-          ))}
-        </div>
-      </div>
       </div>
 
       <div className="container">
-      <div className="mb-10 pt-20 mx-5 text-center">
+        <div className="mb-10 pt-20 mx-5 text-center">
           <p className="subheading">IT Solution FAQ</p>
           <h2 className="heading">IT Solutions <span className="text-green300">Most</span> asked <span className="text-green300"> questions</span></h2>
         </div>
-      <div className="flex flex-col items-center justify-between md:flex-row gap-8 mx-5">
+        <div className="flex flex-col items-center justify-between md:flex-row gap-8 mx-5">
 
-        <div className="flex-1 rounded-2xl bg-textColor">
-          <img src={FAQimg} className='w-full hover:scale-[1.1] transition' alt="" />
+          <div className="flex-1 rounded-2xl bg-textColor">
+            <img src={FAQimg} className='w-full hover:scale-[1.1] transition' alt="" />
+          </div>
+
+          <div className="flex-1 space-y-4">
+            {faqData.map((item, index) => (
+              <AccordionItem
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                isOpen={openIndex === index} // Check if the current item is open
+                onToggle={() => handleToggle(index)} // Pass the toggle function
+              />
+            ))}
+          </div>
         </div>
-        
-        <div className="flex-1 space-y-4">
-          {faqData.map((item, index) => (
-            <AccordionItem
-              key={index}
-              question={item.question}
-              answer={item.answer}
-              isOpen={openIndex === index} // Check if the current item is open
-              onToggle={() => handleToggle(index)} // Pass the toggle function
-            />
-          ))}
-        </div>
-      </div>
       </div>
     </section>
   );
@@ -102,9 +102,8 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
         </span>
       </div>
       <div
-        className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-          isOpen ? 'max-h-40' : 'max-h-0'
-        } bg-white border-t`}
+        className={`overflow-hidden transition-max-height duration-500 ease-in-out ${isOpen ? 'max-h-40' : 'max-h-0'
+          } bg-white border-t`}
       >
         <p className="p-4 text-gray-700">{answer}</p>
       </div>

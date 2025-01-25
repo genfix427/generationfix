@@ -7,7 +7,7 @@ const OnlineServices = () => {
   return (
     <div>
       <OSHero />
-      <OSServiceCard onlineServices={onlineServices}/>
+      <OSServiceCard onlineServices={onlineServices} />
     </div>
   )
 }

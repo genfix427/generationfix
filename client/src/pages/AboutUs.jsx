@@ -11,15 +11,15 @@ import AboutWork from '../components/About/AboutWork'
 const AboutUs = () => {
   return (
     <>
-    <AboutHero />
-    <WhyChoose />
-    <AboutWork />
-    <AboutOfferCard />
-    <Aboutus />
-    
-    <AboutContent />
-    <HomeContent />
-    <AboutMission />
+      <AboutHero />
+      <WhyChoose />
+      <AboutWork />
+      <AboutOfferCard />
+      <Aboutus />
+
+      <AboutContent />
+      <HomeContent />
+      <AboutMission />
     </>
   )
 }
