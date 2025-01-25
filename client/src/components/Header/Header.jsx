@@ -75,7 +75,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
           </Navbar.Brand>
           <div className="flex md:order-2">
             <Link to='/appointment'>
-              <button className=" ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 p-1 rounded-md mt-1 md:p-3 transition-all">Free Consultation</button>
+              <button className=" ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 py-1 px-2 rounded-md mt-1 md:py-2 md:px-3 transition-all">Free Consultation</button>
             </Link>
             <Navbar.Toggle />
           </div>
