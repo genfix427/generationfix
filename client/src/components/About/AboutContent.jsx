@@ -50,30 +50,30 @@ const AboutContent = () => {
 
               <div className="flex flex-col gap-5 mx-5">
                 <Timeline>
-                {
-                  Content.map((item, index) => (
-                    <Timeline.Item key={index}>
-                <Timeline.Point />
-                <Timeline.Content>
-                <Timeline.Body>
-                <div className="w-full flex items-center justify-between gap-3 border p-1 rounded-md bg-textColor hover:shadow-md hover:bg-white transition-all">
-                  <div className="w-[100px]">
-                    <img src={item.Icon} className='w-full' alt="" />
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <h3 className='text-lg font-bold text-headingColor'>{item.head}</h3>
-                    <p className="text-green300 text-[14px]">{item.desc}</p>
-                  </div>
-                </div>
-                </Timeline.Body>
-                </Timeline.Content>
-                </Timeline.Item>
-                  ))
-                }
+                  {
+                    Content.map((item, index) => (
+                      <Timeline.Item key={index}>
+                        <Timeline.Point />
+                        <Timeline.Content>
+                          <Timeline.Body>
+                            <div className="w-full flex items-center justify-between gap-3 border p-1 rounded-md bg-textColor hover:shadow-md hover:bg-white transition-all">
+                              <div className="w-[100px]">
+                                <img src={item.Icon} className='w-full' alt="" />
+                              </div>
+                              <div className="flex flex-col gap-1">
+                                <h3 className='text-lg font-bold text-headingColor'>{item.head}</h3>
+                                <p className="text-green300 text-[14px]">{item.desc}</p>
+                              </div>
+                            </div>
+                          </Timeline.Body>
+                        </Timeline.Content>
+                      </Timeline.Item>
+                    ))
+                  }
 
-                
+
                 </Timeline>
-                
+
               </div>
 
 

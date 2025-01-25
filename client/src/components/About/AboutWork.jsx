@@ -39,7 +39,7 @@ const AboutWork = () => {
     
               {
                 work.map((item, index) => (
-                  <div key={index} className="border p-4 bg-green300 bg-opacity-30 w-[350px] h-full md:h-[250px] rounded-tl-3xl rounded-br-3xl hover:translate-y-2 hover:shadow-xl transition-all">
+                  <div key={index} className="border p-4 bg-green300 bg-opacity-30 w-[350px] h-full lg:h-[250px] rounded-tl-3xl rounded-br-3xl hover:translate-y-2 hover:shadow-xl transition-all">
                 <div className="w-[80px] h-[80px] bg-textColor block mx-auto hover:border-8 hover:border-solid hover:border-green300 hover:rotate-[360deg] transition-all rounded-full">
                   <img src={item.icon} alt="" className="w-full rounded-full p-2" />
                 </div>

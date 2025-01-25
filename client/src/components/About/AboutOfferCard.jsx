@@ -2,9 +2,6 @@ import React from 'react'
 import Icon1 from '../../assets/gifIcons/like.gif'
 import Icon2 from '../../assets/gifIcons/chat.gif'
 import Icon3 from '../../assets/gifIcons/computer.gif'
-import Icon4 from '../../assets/gifIcons/like.gif'
-import { GoArrowUpRight } from "react-icons/go";
-import { Link } from 'react-router-dom'
 
 const solutionCard = [
   {
@@ -39,7 +36,7 @@ const AboutOfferCard = () => {
                   h-[100px] md:w-[100px] md:h-[100px] object-cover
                   rounded-[50%] md:rounded-[100%]"/>
 
-              <h2 className="text-2xl font-bold text-headingColor">{item.title}</h2>
+              <h2 className="text-2xl font-bold text-headingColor text-center">{item.title}</h2>
               <span className="w-[100px] h-1 bg-green300 rounded-full block mt-[-14px] "></span>
 
               <p className="text-[16px] text-green300 text-center">{item.description}</p>
