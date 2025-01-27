@@ -1,27 +1,33 @@
 // src/FAQ.js
 import React, { useState } from 'react';
 import FAQimg from '../../assets/images/faq.png'
+import { Link } from 'react-router-dom';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const faqData = [
   {
-    question: 'What is digital marketing?',
-    answer: 'Digital marketing refers to the use of online platforms and technologies to promote products or services, encompassing strategies like SEO, social media marketing, and email marketing.',
+    question: 'What services does Generations Fix offer?',
+    answer: 'We provide a range of services, including smartphone, laptop, and POS system repairs, IT hardware solutions, networking services, website design, and digital marketing to help businesses grow.',
   },
   {
-    question: 'Why is digital marketing important for my business?',
-    answer: 'It allows businesses to reach a broader audience, improve brand visibility, and connect with customers in real-time.',
+    question: 'Where is Generations Fix located?',
+    answer: 'We are based in Miami and offer pickup and drop-off services for repairs, making it convenient for our customers.',
   },
   {
-    question: 'How do I choose the right digital marketing strategy for my business?',
-    answer: 'Consider your business goals, target audience, and budget. Consulting with a digital marketing agency can help tailor the right strategy.',
+    question: 'Do you offer on-site repair services?',
+    answer: 'Yes! We offer on-site troubleshooting for IT hardware and networking services. For device repairs, we also provide pickup and drop-off services.',
   },
   {
-    question: 'How long does it take to see results from digital marketing?',
-    answer: 'The timeline for seeing results from digital marketing varies based on the strategy employed. For instance, SEO can take several months to show significant results due to the time it takes for search engines to index changes. In contrast, pay-per-click (PPC) advertising can yield immediate results. Consistent effort and monitoring are key to achieving and maintaining success in digital marketing.',
+    question: 'What types of devices do you repair?',
+    answer: 'We repair smartphones, laptops, computers, tablets, POS systems, gaming consoles, printers, and other IT hardware.',
   },
   {
-    question: 'What is content marketing, and why is it important?',
-    answer: 'Content marketing involves creating and distributing valuable content to attract and engage a specific audience. It can include blog posts, videos, infographics, and social media posts. Content marketing is important because it helps establish your brand as an authority in your industry, improves SEO, and builds trust with your audience, ultimately leading to increased conversions and customer loyalty.',
+    question: 'What IT hardware services do you provide?',
+    answer: 'We offer hardware installation, troubleshooting, upgrades, server setup, data recovery, networking solutions, and structured cabling.',
+  },
+  {
+    question: 'What web design services do you offer?',
+    answer: 'We design and develop custom websites, e-commerce stores, business websites, and portfolio sites tailored to your needs.',
   },
 ];
 
@@ -35,28 +41,35 @@ const FAQ = () => {
   return (
     <section className="mt-[100px] py-10 bg-textColor">
       <div className="container">
-      <div className="mb-10 pt-10 mx-5">
-          <p className="subheading">Most asked questions</p>
-          <h2 className="heading">Want to <span className="text-green300">know</span> about <span className="text-green300"> us</span></h2>
+      <div className="flex flex-wrap justify-between mb-8 mx-3">
+          <div className="">
+            <p className="text-[14px] text-green300 font-bold">Frequently Asked Questions (FAQ)</p>
+            <h2 className="text-3xl text-headingColor font-bold">Generations Fix <span className="text-green300">General</span> Questions</h2>
+          </div>
+          <div className="">
+            <Link to="/faq">
+              <GoArrowUpRight className='bg-green300 text-[40px] text-white font-bold p-2 rounded-full hover:bg-white hover:text-green300 hover:border hover:border-solid hover:border-green300 transition-all' />
+            </Link>
+          </div>
         </div>
-      <div className="flex flex-col items-center justify-between md:flex-row mx-5">
+        <div className="flex flex-col items-center justify-between md:flex-row mx-5">
 
-        <div className="flex-1 ">
-          <img src={FAQimg} className='w-full rounded-md' alt="" />
+          <div className="flex-1 ">
+            <img src={FAQimg} className='w-full rounded-md' alt="" />
+          </div>
+
+          <div className="flex-1 space-y-4">
+            {faqData.map((item, index) => (
+              <AccordionItem
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                isOpen={openIndex === index} // Check if the current item is open
+                onToggle={() => handleToggle(index)} // Pass the toggle function
+              />
+            ))}
+          </div>
         </div>
-        
-        <div className="flex-1 space-y-4">
-          {faqData.map((item, index) => (
-            <AccordionItem
-              key={index}
-              question={item.question}
-              answer={item.answer}
-              isOpen={openIndex === index} // Check if the current item is open
-              onToggle={() => handleToggle(index)} // Pass the toggle function
-            />
-          ))}
-        </div>
-      </div>
       </div>
     </section>
   );
@@ -77,9 +90,8 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
         </span>
       </div>
       <div
-        className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-          isOpen ? 'max-h-40' : 'max-h-0'
-        } bg-white border-t`}
+        className={`overflow-hidden transition-max-height duration-500 ease-in-out ${isOpen ? 'max-h-40' : 'max-h-0'
+          } bg-white border-t`}
       >
         <p className="p-4 text-gray-700">{answer}</p>
       </div>

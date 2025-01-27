@@ -1,27 +1,97 @@
-// src/FAQ.js
 import React, { useState } from 'react';
-import FAQimg from '../assets/images/faq.png'
+import FAQimgGeneral from '../assets/images/faqGeneral.jpg';
+import FAQimgRepair from '../assets/images/faqRepair.jpg';
+import FAQimgIT from '../assets/images/faqIT.jpg';
+import FAQimgWeb from '../assets/images/faqDM.jpg';
 
 const faqData = [
   {
-    question: 'What is digital marketing?',
-    answer: 'Digital marketing refers to the use of online platforms and technologies to promote products or services, encompassing strategies like SEO, social media marketing, and email marketing.',
+    category: 'General Questions',
+    image: FAQimgGeneral,
+    faqs: [
+      {
+        question: 'What services does Generations Fix offer?',
+        answer: 'We provide a range of services, including smartphone, laptop, and POS system repairs, IT hardware solutions, networking services, website design, and digital marketing to help businesses grow.',
+      },
+      {
+        question: 'Where is Generations Fix located?',
+        answer: 'We are based in Miami and offer pickup and drop-off services for repairs, making it convenient for our customers.',
+      },
+      {
+        question: 'Do you offer on-site repair services?',
+        answer: 'Yes! We offer on-site troubleshooting for IT hardware and networking services. For device repairs, we also provide pickup and drop-off services.',
+      },
+    ],
   },
   {
-    question: 'Why is digital marketing important for my business?',
-    answer: 'It allows businesses to reach a broader audience, improve brand visibility, and connect with customers in real-time.',
+    category: 'Repair Services',
+    image: FAQimgRepair,
+    faqs: [
+      {
+        question: 'What types of devices do you repair?',
+        answer: 'We repair smartphones, laptops, computers, tablets, POS systems, gaming consoles, printers, and other IT hardware.',
+      },
+      {
+        question: 'How long does a repair take?',
+        answer: 'Most repairs are completed within 24 hours. However, complex issues may take longer, and we will inform you of the estimated time.',
+      },
+      {
+        question: 'Do you use original replacement parts?',
+        answer: 'Yes! We use high-quality, original, or OEM parts to ensure the best performance for your device.',
+      },
+      {
+        question: 'Is there a warranty on repairs?',
+        answer: 'Yes, we offer a limited warranty on most repairs. The warranty period depends on the type of repair and parts used.',
+      },
+      {
+        question: 'What if my device is beyond repair?',
+        answer: 'If your device is beyond repair, we will offer you alternative solutions, such as data recovery, device replacement recommendations, or trade-in options.',
+      },
+    ],
   },
   {
-    question: 'How do I choose the right digital marketing strategy for my business?',
-    answer: 'Consider your business goals, target audience, and budget. Consulting with a digital marketing agency can help tailor the right strategy.',
+    category: 'IT Hardware & Networking Services',
+    image: FAQimgIT,
+    faqs: [
+      {
+        question: 'What IT hardware services do you provide?',
+        answer: 'We offer hardware installation, troubleshooting, upgrades, server setup, data recovery, networking solutions, and structured cabling.',
+      },
+      {
+        question: 'Can you set up a business network?',
+        answer: 'Yes! We specialize in network setup, WiFi configuration, server installations, firewall security, and VPN solutions for businesses of all sizes.',
+      },
+      {
+        question: 'Do you offer managed IT services?',
+        answer: 'Yes, we provide IT support and maintenance plans to keep your business systems running smoothly.',
+      },
+    ],
   },
   {
-    question: 'How long does it take to see results from digital marketing?',
-    answer: 'The timeline for seeing results from digital marketing varies based on the strategy employed. For instance, SEO can take several months to show significant results due to the time it takes for search engines to index changes. In contrast, pay-per-click (PPC) advertising can yield immediate results. Consistent effort and monitoring are key to achieving and maintaining success in digital marketing.',
-  },
-  {
-    question: 'What is content marketing, and why is it important?',
-    answer: 'Content marketing involves creating and distributing valuable content to attract and engage a specific audience. It can include blog posts, videos, infographics, and social media posts. Content marketing is important because it helps establish your brand as an authority in your industry, improves SEO, and builds trust with your audience, ultimately leading to increased conversions and customer loyalty.',
+    category: 'Web Design & Digital Marketing',
+    image: FAQimgWeb,
+    faqs: [
+      {
+        question: 'What web design services do you offer?',
+        answer: 'We design and develop custom websites, e-commerce stores, business websites, and portfolio sites tailored to your needs.',
+      },
+      {
+        question: 'Can you help me market my business online?',
+        answer: 'Absolutely! We specialize in SEO, social media marketing, Google Ads, Google Analytics, and targeted digital campaigns to increase your brand visibility.',
+      },
+      {
+        question: 'How do you ensure my business reaches the right audience?',
+        answer: 'We use Google Ads, Meta (Facebook, Instagram, WhatsApp), SEO, Google Tag Manager, and targeted digital strategies to reach the right customers and boost your conversions.',
+      },
+      {
+        question: 'How long does it take to design a website?',
+        answer: ' A standard website takes 2-4 weeks, while more complex websites (e-commerce, custom features) may take longer.',
+      },
+      {
+        question: 'Do you provide website maintenance?',
+        answer: 'Yes, we offer website maintenance, updates, and security checks to ensure your website runs smoothly.',
+      },
+    ],
   },
 ];
 
@@ -34,55 +104,39 @@ const FAQ = () => {
 
   return (
     <section className="">
-      <div className="container">
-        <div className="mb-10 pt-20 mx-5 text-center">
-          <p className="subheading">Digital Marketing FAQ</p>
-          <h2 className="heading">Digital Marketing <span className="text-green300">Most</span> asked <span className="text-green300"> questions</span></h2>
-        </div>
-        <div className="flex flex-col items-center justify-between md:flex-row gap-8 mx-5">
-
-          <div className="flex-1 rounded-2xl bg-textColor">
-            <img src={FAQimg} className='w-full hover:scale-[1.1] transition' alt="" />
+      {faqData.map((section, sectionIndex) => (
+        <div key={sectionIndex} className="container py-10">
+          <div className="mb-10 text-center mx-5">
+            <h2 className="heading">{section.category}</h2>
           </div>
 
-          <div className="flex-1 space-y-4">
-            {faqData.map((item, index) => (
-              <AccordionItem
-                key={index}
-                question={item.question}
-                answer={item.answer}
-                isOpen={openIndex === index} // Check if the current item is open
-                onToggle={() => handleToggle(index)} // Pass the toggle function
+          <div
+            className={`flex flex-col md:flex-row gap-8 items-center mx-5 ${
+              sectionIndex % 2 === 0 ? 'md:flex-row-reverse' : ''
+            }`}
+          >
+            <div className="flex-1 hidden md:block overflow-hidden">
+              <img
+                src={section.image}
+                className="w-full rounded-xl hover:scale-105 transition-transform duration-300"
+                alt={`${section.category} Illustration`}
               />
-            ))}
+            </div>
+
+            <div className="flex-1 space-y-4">
+              {section.faqs.map((item, index) => (
+                <AccordionItem
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                  isOpen={openIndex === `${sectionIndex}-${index}`}
+                  onToggle={() => handleToggle(`${sectionIndex}-${index}`)}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="container">
-        <div className="mb-10 pt-20 mx-5 text-center">
-          <p className="subheading">IT Solution FAQ</p>
-          <h2 className="heading">IT Solutions <span className="text-green300">Most</span> asked <span className="text-green300"> questions</span></h2>
-        </div>
-        <div className="flex flex-col items-center justify-between md:flex-row gap-8 mx-5">
-
-          <div className="flex-1 rounded-2xl bg-textColor">
-            <img src={FAQimg} className='w-full hover:scale-[1.1] transition' alt="" />
-          </div>
-
-          <div className="flex-1 space-y-4">
-            {faqData.map((item, index) => (
-              <AccordionItem
-                key={index}
-                question={item.question}
-                answer={item.answer}
-                isOpen={openIndex === index} // Check if the current item is open
-                onToggle={() => handleToggle(index)} // Pass the toggle function
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+      ))}
     </section>
   );
 };

@@ -29,14 +29,15 @@ const Footerr = () => {
                 <Link to='/' ><Footer.Link>Home</Footer.Link></Link>
                 <Link to='/about' ><Footer.Link>About</Footer.Link></Link>
                 <Link to='/contact' ><Footer.Link>Contact</Footer.Link></Link>
-                <Link to='/faq' ><Footer.Link>FAQ</Footer.Link></Link>
+                <Link to='/appointment' ><Footer.Link>Free Consultation</Footer.Link></Link>
               </Footer.LinkGroup>
             </div>
             <div>
               <Footer.Title title="Legal" />
               <Footer.LinkGroup col>
-                <Link to='' ><Footer.Link>Privacy Policy</Footer.Link></Link>
-                <Link to='' ><Footer.Link>Terms &amp; Conditions</Footer.Link></Link>
+                <Link to='/faq' ><Footer.Link>FAQ</Footer.Link></Link>
+                <Link to='/privacy-policy' ><Footer.Link>Privacy Policy</Footer.Link></Link>
+                <Link to='/terms-and-conditions' ><Footer.Link>Terms &amp; Conditions</Footer.Link></Link>
               </Footer.LinkGroup>
             </div>
           </div>

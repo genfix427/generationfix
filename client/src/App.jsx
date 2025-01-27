@@ -17,6 +17,8 @@ import ItServices from './pages/ItServices'
 import RepairServiceDetail from './pages/RepairServiceDetail'
 import ItServiceDetail from './pages/ItServiceDetail'
 import ScrollToTop from './components/Hero/ScrollToTop'
+import TermsConditions from './pages/TermsConditions'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const App = () => {
   return (
@@ -38,8 +40,9 @@ const App = () => {
         <Route path="/repair-services/:slug" element={<RepairServiceDetail repairServices={repairServices} />} />
         <Route path="/it-services/:slug" element={<ItServiceDetail itServices={itServices} />} />
 
+        <Route path="/terms-and-conditions" element={<TermsConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-        
       </Routes>
       <Footer />
     </BrowserRouter>
