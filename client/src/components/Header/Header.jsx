@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import Logo from '../../assets/images/logo.png'
-import Call  from '../../assets/gifIcons/phone.gif'
-import Chat  from '../../assets/gifIcons/chat.gif'
+import Call from '../../assets/gifIcons/phone.gif'
+import Chat from '../../assets/gifIcons/chat.gif'
 
 const Header = ({ onlineServices, repairServices, itServices }) => {
   const [isCompanyDrawerOpen, setIsCompanyDrawerOpen] = useState(false);
@@ -68,10 +68,12 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
       </nav>
       <header className="sticky top-0 z-50 bg-white shadow-md">
         <Navbar fluid={true} className="text-white mx-auto max-w-screen-xl p-4">
-          <Navbar.Brand href="/">
-            <span className="self-center whitespace-nowrap text-lg sm:text-md font-semibold text-black">
-              <img src={Logo} className="w-[100px] md:w-[120px]" alt="" />
-            </span>
+          <Navbar.Brand>
+            <Link to='/'>
+              <span className="self-center whitespace-nowrap text-lg sm:text-md font-semibold text-black">
+                <img src={Logo} className="w-[100px] md:w-[120px]" alt="" />
+              </span>
+            </Link>
           </Navbar.Brand>
           <div className="flex md:order-2">
             <Link to='/appointment'>
@@ -80,8 +82,8 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
             <Navbar.Toggle />
           </div>
           <Navbar.Collapse>
-          <Link to="/"><Navbar.Link>Home</Navbar.Link></Link>
-          <Link to="/about"><Navbar.Link>About Us</Navbar.Link></Link>
+            <Link to="/"><Navbar.Link>Home</Navbar.Link></Link>
+            <Link to="/about"><Navbar.Link>About Us</Navbar.Link></Link>
             <Navbar.Link>
               <div
                 className="relative cursor-pointer"

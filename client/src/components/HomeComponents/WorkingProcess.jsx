@@ -9,8 +9,8 @@ const WorkingProcess = () => {
     <section className="mt-[100px] contentbg pb-40 pt-20">
       <div className="container">
         <div className="mb-10 md:mb-[200px] text-center">
-        <p className="subheading">Working Process</p>
-        <h2 className="heading text-white">How are <span className="text-green300">Team</span> Works <span className="text-green300">with project</span></h2>
+        <p className="subheading !text-white">Working Process</p>
+        <h2 className="heading text-white">How are <span className="text-white">Team</span> Works <span className="text-white">with project</span></h2>
           </div>
         <div className="flex flex-col md:flex-row items-center justify-between text-center mx-5 gap-8">
 
