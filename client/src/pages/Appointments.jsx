@@ -53,10 +53,10 @@ const Appointments = () => {
 
     emailjs
       .sendForm(
-        "service_acuh4fl", // Replace with your EmailJS Service ID
-        "template_yab2stb", // Replace with your EmailJS Template ID
+        import.meta.env.VITE_APPOINTMENT_SERVICE_KEY, // Replace with your EmailJS Service ID
+        import.meta.env.VITE_APPOINTMENT_TEMPLATE_KEY, // Replace with your EmailJS Template ID
         form.current,
-        "yhT2q0sNVjOsSmaHK" // Replace with your EmailJS Public Key
+        import.meta.env.VITE_APPOINTMENT_PUBLIC_KEY // Replace with your EmailJS Public Key
       )
       .then(
         (result) => {

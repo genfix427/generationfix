@@ -44,7 +44,7 @@ const Footerr = () => {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright by="GenerationsFix. All right reserved" year={2022} />
+          <Footer.Copyright by="GenerationsFix. All right reserved" year={2025} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Link to='https://www.facebook.com/genfix247' ><Footer.Icon icon={BsFacebook} /></Link>
             <Link to='https://www.instagram.com/genfix247/#' ><Footer.Icon icon={BsInstagram} /></Link>

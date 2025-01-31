@@ -14,8 +14,8 @@ const ContactLocation = () => {
 
     try {
       emailjs
-        .sendForm('service_5oxlnn2', 'template_r66tfjl', form.current, {
-          publicKey: 'yhT2q0sNVjOsSmaHK',
+        .sendForm(import.meta.env.VITE_CONTACT_SERVICE_KEY, import.meta.env.VITE_CONTACT_TEMPLATE_KEY, form.current, {
+          publicKey: import.meta.env.VITE_CONTACT_PUBLIC_KEY,
         })
         .then(
           () => {
