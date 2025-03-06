@@ -61,7 +61,7 @@ const HomeHero = () => {
 
   return (
     <div className="container relative">
-  <div className="w-full h-[50vh] md:h-[70vh] overflow-hidden rounded-2xl relative">
+  <div className="w-full h-[80vh] sm:h-[70vh] overflow-hidden rounded-2xl relative">
     <div
       className="relative w-full h-full mt-0 md:mt-10 flex transition-transform duration-1000 ease-in-out"
       style={{ transform: `translateX(-${currentSlide * 100}%)` }}

@@ -11,7 +11,7 @@ const AboutHero = () => {
 
             <div className="">
               <p className="text-[15px] md:text-[18px] font-bold text-white">About</p>
-              <h2 className="text-2xl md:text-3xl text-textColor font-bold">Generations Fix:<span className="text-white"> Trusted Tech Repair Service</span></h2>
+              <h1 className="text-2xl md:text-3xl text-textColor font-bold">Generations Fix:<span className="text-white"> Trusted Tech Repair Service</span></h1>
             </div>
             <p className="text-[17px] text-white">
               Welcome to <span className='text-textColor font-semibold'>Generationsfix</span>, we are your trusted partner for all things tech! With a passion for innovation and a commitment to excellence, we provide comprehensive solutions tailored to meet your personal and business needs.

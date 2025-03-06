@@ -20,7 +20,7 @@ const OwnerCont = () => {
                   <p className="text-[14px] font-semibold ">Your Trusted Parteners</p>
                 </div>
                 <h2 className='text-2xl md:text-4xl font-bold text-headingColor'>What We Do at Generations Fix</h2>
-                <p className="text-green300 font-[14px]">At Generations Fix, we specialize in providing comprehensive Managed IT Services and Digital Marketing solutions for small to medium-sized businesses and end customers.
+                <p className="text-green300 text-[18px]">At Generations Fix, we specialize in providing comprehensive Managed IT Services and Digital Marketing solutions for small to medium-sized businesses and end customers.
                 Our goal is to keep your business running smoothly, ensuring that your computers, servers, printers, and other essential devices operate seamlessly without disruption.</p>
     
                 =

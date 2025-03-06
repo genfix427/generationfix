@@ -47,7 +47,7 @@ const Footerr = () => {
           <Footer.Copyright by="GenerationsFix. All right reserved" year={2025} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Link to='https://www.facebook.com/genfix247' ><Footer.Icon icon={BsFacebook} /></Link>
-            <Link to='https://www.instagram.com/genfix247/#' ><Footer.Icon icon={BsInstagram} /></Link>
+            <Link to='https://www.instagram.com/generationsfix_miami/' ><Footer.Icon icon={BsInstagram} /></Link>
             <Link to='https://www.linkedin.com/company/generations-fix/?viewAsMember=true' ><Footer.Icon icon={BsLinkedin} /></Link>
           </div>
         </div>

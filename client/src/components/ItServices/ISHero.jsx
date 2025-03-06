@@ -8,7 +8,7 @@ const ISHero = () => {
           <div className="flex flex-col gap-5 text-center">
           <div className="">
               <p className="text-[16px] font-bold text-white">Your Reliable IT Partner for Every Solution.</p>
-              <h2 className="text-3xl text-white font-bold">Comprehensive <span className="text-textColor">IT Solutions</span> for Modern Businesses</h2>
+              <h1 className="text-3xl text-white font-bold">Comprehensive <span className="text-textColor">IT Solutions</span> for Modern Businesses</h1>
             </div>
             <p className="text-[17px] text-white">
             Transform your organization with our tailored IT services, including network management, cloud solutions, and cybersecurity. We ensure your operations run seamlessly and securely.

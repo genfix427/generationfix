@@ -157,22 +157,32 @@ const termsData = [
 
 const TermsConditions = () => {
   return (
-    <section className="max-w-5xl mx-auto py-16 px-6 bg-white">
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
-        <p className="text-lg text-gray-600">
-          Welcome to <strong>Generations Fix</strong>! These Terms and Conditions ("Terms") govern your use of our services, including IT hardware repairs, networking solutions, web design, and digital marketing. By using our services, you agree to comply with these Terms.
-        </p>
-      </div>
-      <div className="space-y-8">
-        {termsData.map((term, index) => (
-          <div key={index} className="border-b pb-4">
-            <h2 className="text-xl font-semibold mb-2">{index + 1}. {term.title}</h2>
-            <div className="text-gray-700 text-base">{term.content}</div>
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <Helmet>
+        <title>Terms and Conditions - GenerationsFix</title>
+        <meta
+          name="keywords"
+          content="Business IT Support Miami, IT Support Miami, Remote IT Support Miami"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      <section className="max-w-5xl mx-auto py-16 px-6 bg-white">
+        <div className="text-center mb-10">
+          <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
+          <p className="text-lg text-gray-600">
+            Welcome to <strong>Generations Fix</strong>! These Terms and Conditions ("Terms") govern your use of our services, including IT hardware repairs, networking solutions, web design, and digital marketing. By using our services, you agree to comply with these Terms.
+          </p>
+        </div>
+        <div className="space-y-8">
+          {termsData.map((term, index) => (
+            <div key={index} className="border-b pb-4">
+              <h2 className="text-xl font-semibold mb-2">{index + 1}. {term.title}</h2>
+              <div className="text-gray-700 text-base">{term.content}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

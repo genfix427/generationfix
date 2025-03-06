@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const privacyPolicyData = [
@@ -122,30 +123,40 @@ const privacyPolicyData = [
 
 const PrivacyPolicy = () => {
   return (
-    <section className="max-w-5xl mx-auto py-16 px-6 bg-white">
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-        <p className="text-gray-600">Effective Date: [Insert Date]</p>
-        <p className="text-lg text-gray-600 mt-2">
-          Generations Fix ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our <strong>IT hardware repair, networking, web design, and digital marketing services</strong>.
-        </p>
-      </div>
-      <div className="space-y-8">
-        {privacyPolicyData.map((section, index) => (
-          <div key={index} className="border-b pb-4">
-            <h2 className="text-xl font-semibold mb-2">{index + 1}. {section.title}</h2>
-            {section.sections
-              ? section.sections.map((subSection, subIndex) => (
-                <div key={subIndex} className="mb-4">
-                  <h3 className="text-lg font-medium mb-2">{subSection.subtitle}</h3>
-                  <div className="text-gray-700 text-base">{subSection.content}</div>
-                </div>
-              ))
-              : <div className="text-gray-700 text-base">{section.content}</div>}
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <Helmet>
+        <title>Privacy Policy - GenerationsFix</title>
+        <meta
+          name="keywords"
+          content="Business IT Support Miami, IT Support Miami, Remote IT Support Miami"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      <section className="max-w-5xl mx-auto py-16 px-6 bg-white">
+        <div className="text-center mb-10">
+          <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+          <p className="text-gray-600">Effective Date: [Insert Date]</p>
+          <p className="text-lg text-gray-600 mt-2">
+            Generations Fix ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our <strong>IT hardware repair, networking, web design, and digital marketing services</strong>.
+          </p>
+        </div>
+        <div className="space-y-8">
+          {privacyPolicyData.map((section, index) => (
+            <div key={index} className="border-b pb-4">
+              <h2 className="text-xl font-semibold mb-2">{index + 1}. {section.title}</h2>
+              {section.sections
+                ? section.sections.map((subSection, subIndex) => (
+                  <div key={subIndex} className="mb-4">
+                    <h3 className="text-lg font-medium mb-2">{subSection.subtitle}</h3>
+                    <div className="text-gray-700 text-base">{subSection.content}</div>
+                  </div>
+                ))
+                : <div className="text-gray-700 text-base">{section.content}</div>}
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

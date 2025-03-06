@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 const socialLinks = [
   {
-    path: "https://www.facebook.com/genfix247",
+    path: "https://www.instagram.com/generationsfix_miami/",
     icon: <AiFillInstagram className='group-hover:text-black w-4 h-5' />
   },
   {
-    path: "https://www.instagram.com/genfix247/#",
+    path: "https://www.facebook.com/genfix247",
     icon: <FaFacebookSquare className='group-hover:text-black w-4 h-5' />
   },
 

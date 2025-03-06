@@ -39,9 +39,9 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
   return (
     <>
       <nav className="border-gray-200 border-b-[1px] bg-textColor">
-        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center mx-auto max-w-screen-xl py-2 px-4 gap-2">
+        <div className="flex justify-center sm:justify-between items-center mx-auto max-w-screen-xl py-2 px-4 gap-2">
           <div className="flex items-center gap-3">
-            <Link to='https://www.instagram.com/genfix247/#' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
+            <Link to='https://www.instagram.com/generationsfix_miami/' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
               <FaSquareInstagram />
             </Link>
             <Link to='https://www.facebook.com/genfix247' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
@@ -52,7 +52,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
             </Link>
           </div>
           <div className="flex items-center">
-            <p className="text-sm text-green300 font-semibold dark:text-white hover:underline mr-3">
+            <p className="text-[14px] sm:text-sm text-green300 font-semibold dark:text-white hover:underline mr-0 sm:mr-3">
               24/7 support 
             </p>
             <p className="text-sm text-green300 font-semibold dark:text-white hover:underline hidden md:block">
@@ -60,10 +60,10 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
             </p>
 
             <Link to="tel:+17865056525">
-              <button className="flex gap-2 items-center ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 py-1 px-2 rounded-md mt-1 md:px-3 md:py-2 transition-all"> <img src={Call} className="w-5 rounded-full" alt="" />Call </button>
+              <button className="flex gap-2 items-center ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 text-[12px] sm:text-sm py-1 px-2 rounded-md mt-1 md:px-3 md:py-2 transition-all"> <img src={Call} className="w-3 sm:w-5 rounded-full" alt="" />Call </button>
             </Link>
             <Link to="/contact">
-              <button className="flex gap-2 items-center ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 py-1 px-2 rounded-md mt-1 md:px-3 md:py-2 transition-all"> <img src={Chat} className="w-5 rounded-full" alt="" />Inquiry </button>
+              <button className="flex gap-2 items-center ml-4 bg-green300 text-white hover:!bg-white hover:text-black hover:border-2 hover:border-solid hover:border-green300 text-[12px] sm:text-sm py-1 px-2 rounded-md mt-1 md:px-3 md:py-2 transition-all"> <img src={Chat} className="w-3 sm:w-5 rounded-full" alt="" />Inquiry </button>
             </Link>
 
           </div>
