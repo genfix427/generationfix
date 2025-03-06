@@ -52,7 +52,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
             </Link>
           </div>
           <div className="flex items-center">
-            <p className="text-[14px] sm:text-sm text-green300 font-semibold dark:text-white hover:underline mr-0 sm:mr-3">
+            <p className="text-[12px] sm:text-sm text-green300 font-semibold dark:text-white hover:underline mr-0 sm:mr-3">
               24/7 support 
             </p>
             <p className="text-sm text-green300 font-semibold dark:text-white hover:underline hidden md:block">

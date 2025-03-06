@@ -30,11 +30,11 @@ const HomeServices = () => {
         {/* Tabs Container with Horizontal Scroll */}
         <div className="overflow-x-auto scrollbar-hide">
           <Tabs aria-label="Tabs with icons" variant="underline" className="flex-nowrap whitespace-nowrap">
-            <Tabs.Item title="Manage IT Services" icon={MdDashboard} className="text-sm md:text-base">
+            <Tabs.Item active title="Manage IT Services" icon={MdDashboard} className="text-sm md:text-base">
               <ServiceTimeline />
             </Tabs.Item>
 
-            <Tabs.Item active title="Digital Marketing" icon={HiUserCircle} className="text-sm md:text-base">
+            <Tabs.Item title="Digital Marketing" icon={HiUserCircle} className="text-sm md:text-base">
               <OnlineServiceTimeline />
             </Tabs.Item>
           </Tabs>
