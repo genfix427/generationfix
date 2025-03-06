@@ -107,7 +107,7 @@ const FAQ = () => {
       {faqData.map((section, sectionIndex) => (
         <div key={sectionIndex} className="container py-10">
           <div className="mb-10 text-center mx-5">
-            <h2 className="heading">{section.category}</h2>
+            <h1 className="heading">{section.category}</h1>
           </div>
 
           <div

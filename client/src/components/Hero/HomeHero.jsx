@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import React Icon
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import Image1 from '../../assets/images/homec1.jpg';
 import Image2 from '../../assets/images/homec2.jpg';
-import Image3 from '../../assets/images/homec3.jpg';
+import Image3 from '../../assets/images/homec3.jpeg';
 import { Link } from "react-router-dom";
 
 const HomeHero = () => {
@@ -79,8 +79,8 @@ const HomeHero = () => {
           {/* Content Overlay */}
           <div className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-40 ">
             <div className="text-center text-white px-4 max-w-[700px]">
-              <h2 className="text-md sm:text-lg md:text-xl font-bold mb-2 text-textColor">{image.heading}</h2>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-5">{image.heading2}</h2>
+              <p className="text-md sm:text-lg md:text-xl font-bold mb-2 text-textColor">{image.heading}</p>
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-5">{image.heading2}</h1>
               <p className="mb-8 text-[12px] sm:text-[14px] md:text-[16px]">{image.description}</p>
               <Link
                 to={image.buttonLink}

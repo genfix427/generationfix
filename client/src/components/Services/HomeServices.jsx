@@ -31,7 +31,7 @@ const HomeServices = () => {
       <Tabs.Item active title="Online Services" icon={HiUserCircle}>
         <OnlineServiceTimeline />
       </Tabs.Item>
-      <Tabs.Item title="IT Services" icon={MdDashboard}>
+      <Tabs.Item title="Manage IT Services" icon={MdDashboard}>
         <ServiceTimeline />
       </Tabs.Item>
       

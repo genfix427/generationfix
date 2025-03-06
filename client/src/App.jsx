@@ -19,33 +19,36 @@ import ItServiceDetail from './pages/ItServiceDetail'
 import ScrollToTop from './components/Hero/ScrollToTop'
 import TermsConditions from './pages/TermsConditions'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import { HelmetProvider } from 'react-helmet-async';
 
 const App = () => {
   return (
-    <BrowserRouter>
-    <ScrollToTop />
-      <Header onlineServices={onlineServices} repairServices={repairServices} itServices={itServices}/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Header onlineServices={onlineServices} repairServices={repairServices} itServices={itServices} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
 
-        <Route path="/digital-marketing-services" element={<OnlineServices />} />
-        <Route path="/it-solutions" element={<ItServices />} />
-        <Route path="/repair-services" element={<RepairServices />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/appointment" element={<Appointment />} />
+          <Route path="/digital-marketing-services" element={<OnlineServices />} />
+          <Route path="/it-solutions" element={<ItServices />} />
+          <Route path="/repair-services" element={<RepairServices />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/appointment" element={<Appointment />} />
 
-        <Route path="/services/:slug" element={<ServicesDetail onlineServices={onlineServices} />} />
-        <Route path="/repair-services/:slug" element={<RepairServiceDetail repairServices={repairServices} />} />
-        <Route path="/it-services/:slug" element={<ItServiceDetail itServices={itServices} />} />
+          <Route path="/services/:slug" element={<ServicesDetail onlineServices={onlineServices} />} />
+          <Route path="/repair-services/:slug" element={<RepairServiceDetail repairServices={repairServices} />} />
+          <Route path="/it-services/:slug" element={<ItServiceDetail itServices={itServices} />} />
 
-        <Route path="/terms-and-conditions" element={<TermsConditions />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </HelmetProvider>
   )
 }
 

@@ -7,11 +7,24 @@ import AboutContent from '../components/About/AboutContent'
 import HomeContent from '../components/HomeComponents/HomeContent'
 import WhyChoose from '../components/About/WhyChoose'
 import AboutWork from '../components/About/AboutWork'
+import OwnerCont from '../components/About/OwnerCont'
+import { Helmet } from 'react-helmet-async'
 
 const AboutUs = () => {
   return (
     <>
+
+      <Helmet>
+        <title>Know more about us - Generationsfix</title>
+        <meta
+          name="keywords"
+          content="Business IT Support Miami, company founders, know about us"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       <AboutHero />
+      <OwnerCont />
       <WhyChoose />
       <AboutWork />
       <AboutOfferCard />

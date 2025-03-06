@@ -79,9 +79,9 @@ const Appointments = () => {
   return (
     <section className="max-w-3xl mx-auto">
       <div className="mt-[55px]">
-        <h2 className="text-2xl font-bold text-headingColor text-center">
+        <h1 className="text-2xl font-bold text-headingColor text-center">
           Submit Your Inquiry
-        </h2>
+        </h1>
         <form onSubmit={handleSubmit} ref={form} className="flex flex-col gap-4 pt-5 mx-5">
           <div className="w-full flex flex-col md:flex-row gap-5">
             <div className="w-full">

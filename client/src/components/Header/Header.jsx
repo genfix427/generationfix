@@ -39,7 +39,7 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
   return (
     <>
       <nav className="border-gray-200 border-b-[1px] bg-textColor">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl py-2 px-4 ">
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center mx-auto max-w-screen-xl py-2 px-4 gap-2">
           <div className="flex items-center gap-3">
             <Link to='https://www.instagram.com/genfix247/#' className="text-green300 hover:text-headingColor transition text-lg sm:text-xl">
               <FaSquareInstagram />
@@ -52,6 +52,9 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
             </Link>
           </div>
           <div className="flex items-center">
+            <p className="text-sm text-green300 font-semibold dark:text-white hover:underline mr-3">
+              24/7 support 
+            </p>
             <p className="text-sm text-green300 font-semibold dark:text-white hover:underline hidden md:block">
               +1 (786) 505-6525
             </p>
@@ -88,6 +91,19 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
               <div
                 className="relative cursor-pointer"
                 onClick={() => {
+                  closeOtherDrawers('resources');
+                  setIsResourcesDrawerOpen(!isResourcesDrawerOpen);
+                }}
+              >
+                <span className="flex items-center">
+                  Manage IT Services <HiChevronDown className="ml-2" />
+                </span>
+              </div>
+            </Navbar.Link>
+            <Navbar.Link>
+              <div
+                className="relative cursor-pointer"
+                onClick={() => {
                   closeOtherDrawers('repair');
                   setIsRepairDrawerOpen(!isRepairDrawerOpen);
                 }}
@@ -106,23 +122,11 @@ const Header = ({ onlineServices, repairServices, itServices }) => {
                 }}
               >
                 <span className="flex items-center">
-                  Online Services <HiChevronDown className="ml-2" />
+                  Digital Marketing <HiChevronDown className="ml-2" />
                 </span>
               </div>
             </Navbar.Link>
-            <Navbar.Link>
-              <div
-                className="relative cursor-pointer"
-                onClick={() => {
-                  closeOtherDrawers('resources');
-                  setIsResourcesDrawerOpen(!isResourcesDrawerOpen);
-                }}
-              >
-                <span className="flex items-center">
-                  IT Services <HiChevronDown className="ml-2" />
-                </span>
-              </div>
-            </Navbar.Link>
+
 
             <Link to="/contact"><Navbar.Link>Contact</Navbar.Link></Link>
           </Navbar.Collapse>
