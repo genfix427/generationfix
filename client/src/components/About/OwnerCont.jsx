@@ -7,15 +7,15 @@ const OwnerCont = () => {
   return (
     <section className='mt-[100px]'>
           <div className="container">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-10 mx-5">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-10 mx-5">
               <div className="w-full rounded-xl overflow-hidden !bg-[#edf2f4] text-center">
-                <img src={Ruhaan} className='w-[400px] h-[400px] object-cover rounded-xl hover:scale-[1.1] transition' alt="" />
+                <img src={Ruhaan} className='w-[400px] h-[400px] mx-auto object-cover rounded-xl hover:scale-[1.1] transition' alt="" />
                 <div className="pt-1 text-black text-xl">Ruhaan</div>
                 <div className="pt-1 pb-2 text-black text-md">Founder</div>
               </div>
     
-              <div className="w-full flex flex-col gap-5">
-                <div className="flex items-center gap-2 text-green300 bg-textColor p-2 w-[200px] rounded-[20px]">
+              <div className="w-full flex flex-col gap-5 text-center md:text-left">
+                <div className="flex items-center gap-2 text-green300 bg-textColor p-2 w-[220px] mx-auto md:mx-0 rounded-[20px]">
                   <PiGlobeStandFill className='text-[20px] ' />
                   <p className="text-[14px] font-semibold ">Your Trusted Parteners</p>
                 </div>
@@ -27,7 +27,7 @@ const OwnerCont = () => {
               </div>
 
               <div className="w-full rounded-xl overflow-hidden !bg-[#edf2f4] text-center">
-                <img src={Raza} className='w-[400px] h-[400px] object-cover rounded-xl hover:scale-[1.1] transition' alt="" />
+                <img src={Raza} className='w-[400px] h-[400px] mx-auto object-cover rounded-xl hover:scale-[1.1] transition' alt="" />
                 <div className="pt-1 text-black text-xl">Raza</div>
                 <div className="pt-1 pb-2 text-black text-md">Co-Founder</div>
               </div>
