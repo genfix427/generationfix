@@ -11,7 +11,7 @@ const ItServices = () => {
         <title>Affordable IT Services Miami - Generationsfix</title>
         <meta
           name="keywords"
-          content="Business IT Support Miami, company founders, know about us"
+          content="it services miami, it support miami, managed it services miami fl"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>

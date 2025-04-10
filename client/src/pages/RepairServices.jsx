@@ -11,7 +11,7 @@ const RepairServices = () => {
         <title>Best Tech Repair in Miami - Generationsfix</title>
         <meta
           name="keywords"
-          content="Business IT Support Miami, company founders, know about us"
+          content="Laptop repair near me, mobile phone repair near me, iphone repair near me"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>

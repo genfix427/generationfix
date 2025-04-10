@@ -12,7 +12,7 @@ const OnlineServices = () => {
         <title>Affordable Digital Marketing Services Miami - Generationsfix</title>
         <meta
           name="keywords"
-          content="Business IT Support Miami, company founders, know about us"
+          content="web design miami, web design company miami, digital marketing solution in miami"
         />
         <meta name="robots" content="index, follow" />
       </Helmet>
